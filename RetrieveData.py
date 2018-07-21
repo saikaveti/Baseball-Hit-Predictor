@@ -52,7 +52,7 @@ class RetrieveData:
 		return data
 
 	def find_prev_date(self):
-		prev_date = datetime.datetime.now() - timedelta(days = 10)
+		prev_date = datetime.datetime.now() - timedelta(days = 1)
 
 		prev_str = str(prev_date)
 		args = prev_str.split()
