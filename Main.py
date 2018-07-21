@@ -24,4 +24,4 @@ final_data = WriteData(list, "BaseballLearningTable.csv")
 final_data.write_player_data()
 
 regression = Classifier("BaseballLearningTable.csv")
-regression.create_training_dataset()
+regression.perform_regression()
