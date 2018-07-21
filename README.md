@@ -33,24 +33,24 @@ I then pulled whether or not the player got a hit on the given day, allowing me 
 Once the data was read from a CSV file into dataframe object, I was able to perform Logistic Regression from then on.
 
 I executed the following statement to generate the training and testing data: (With a 75/25 split in the data)
-'''
+```
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = .25, random_state=25)
-'''
+```
 
 In order to obtain the prediction train, I executed the following statement:
-'''
+```
 y_pred = LogReg.predict(X_test)
-'''
+```
 
 In order to obtain the confusion matrix and classification matrix, I executed the following command:
-'''
+```
 confusion_matrix(y_test, y_pred)
 classification_report(y_test, y_pred)
-'''
+```
 
 ## Final Results
 Correctly predicted the result with a 75% overall accurancy. The confusion matrix and the classification report are below:
-'''
+```
  [35  5]
  [17 23]
              precision    recall  f1-score   support
@@ -59,5 +59,4 @@ Correctly predicted the result with a 75% overall accurancy. The confusion matri
           1       0.82      0.57      0.68        40
 
 avg / total       0.75      0.72      0.72        80
-
-'''
+```
