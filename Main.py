@@ -23,3 +23,6 @@ for player in list:
 	player.print_player()
 
 print(len(list))
+
+final_data = WriteData(list, "BaseballLearningTable.txt")
+final_data.write_player_data()
