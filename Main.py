@@ -2,6 +2,7 @@ import datetime
 from RetrieveData import *
 from PlayerList import *
 from WriteData import *
+from LogisticRegression import *
 
 
 write_data_object = RetrieveData(datetime.datetime.now())
@@ -19,10 +20,8 @@ playerlist = PlayerList("playerdatatable.txt", "PlayerHitStat.txt")
 list = playerlist.prune_list()
 
 
-for player in list:
-	player.print_player()
-
-print(len(list))
-
-final_data = WriteData(list, "BaseballLearningTable.txt")
+final_data = WriteData(list, "BaseballLearningTable.csv")
 final_data.write_player_data()
+
+regression = Classifier("BaseballLearningTable.csv")
+regression.create_training_dataset()

@@ -154,7 +154,6 @@ class PlayerList:
 			###print("IN LOOP")
 			for single_day in hit_list:
 				if player.first_name == single_day.first_name and player.last_name == single_day.last_name:
-					print("NAME MATCH")
 					player.get_hit = single_day.hit
 		return player_list
 
