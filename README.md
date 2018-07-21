@@ -20,12 +20,12 @@ This was one of the most challenging parts of the project. I had to generate a h
 
 These variables are good for such an analysis because they are independent of each other, and represent an important aspect of Baseball.
 
-H - Ability to put ball in play
-BB - Plate Disciple
-SB - Speed
-SH - Avoiding a strikeout
-BA - How often a batter gets a hit
-SLG - How "good" a player's hits are
+1. H - Ability to put ball in play
+2. BB - Plate Disciple
+3. SB - Speed
+4. SH - Avoiding a strikeout
+5. BA - How often a batter gets a hit
+6. SLG - How "good" a player's hits are
 
 I then pulled whether or not the player got a hit on the given day, allowing me to get all the data needed to (hopefully) learn the parameters accurately.
 
